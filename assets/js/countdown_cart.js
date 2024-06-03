@@ -72,10 +72,12 @@ function hideCountdown() {
 }
 
 function handleClearCartResponse() {
+    /* Išjungta frontend versijoje
     if (!this.status)
         return;
 
     if (this.status == 200) {
+    */
         ccfwooController.stopInterval(true);
         ccfwooLocal.cart_count = 0;
         ccfwooController.setCartItems(0);
@@ -84,6 +86,9 @@ function handleClearCartResponse() {
             hideCountdown();
         }, parseInt(ccfwooLocal.expired_message_seconds) * 1000) + 1000;
 
-    }
+        /* Tik frontend versijoje */
+        $('.elementor-button-icon-qty').text('0');
+
+     //}
 
 }

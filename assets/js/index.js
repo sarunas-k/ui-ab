@@ -28,18 +28,14 @@ $(window).on('load resize', function () {
     }
 });
 $(document).ready(function () {
-    let dropdown = $('.raven-nav-menu-dropdown');
     $('.raven-nav-menu-toggle-button').on('click', function (event) {
-        dropdown.toggleClass('nav-opened');
-        // if (dropdown.css('height') === '0px') {
-        //     dropdown.css('display', 'block');
-        //     dropdown.css('height', '295px');
-        //     dropdown.show();
-        // } else {
-        //     dropdown.css('height', '0px');
-        //     setTimeout(function () {
-        //         dropdown.hide();
-        //     }, 500);
-        // }
+        $('.raven-nav-menu-dropdown').toggleClass('nav-opened');
+    });
+
+    $('.elementor-menu-cart__toggle_button').on('click', function(event) {
+        $('.elementor-menu-cart__container').toggle();
+    });
+    $('.elementor-menu-cart__close-button').on('click', function(event) {
+        $('.elementor-menu-cart__container').toggle();
     });
 });
