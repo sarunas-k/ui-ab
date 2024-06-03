@@ -1,6 +1,6 @@
 # User interface from design on Figma
 
-This application is single page, user interface only, no back-end. It is built as checking out page for e-shop. There were A and B versions, this is a completed UI. 
+This application is single page, user interface only, no back-end. It is built as checking out page for e-shop. There were A and B versions, this is a completed UI. Small screens support can be tested by resizing the browser.
 
 * [Hosted page link](https://applications.w5.lt/AB-checkout)
 
