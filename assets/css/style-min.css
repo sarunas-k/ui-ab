@@ -623,6 +623,7 @@ main.jupiterx-main .woocommerce .checkout section {
     right: 0;
     transition: all 0.5s ease;
     display: block;
+    overflow-y: hidden;
 }
 .nav-closed {
     height: 0;
